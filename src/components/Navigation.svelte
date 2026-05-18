@@ -1,5 +1,7 @@
 <script>
-  function nav(page) {  export let currentPage;
+  export let currentPage;
+
+  function nav(page) {
     const event = new CustomEvent("navigate", { detail: page });
     dispatchEvent(event);
   }
@@ -19,3 +21,4 @@
   >
     Contact Log
   </button>
+</nav>
