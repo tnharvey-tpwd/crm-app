@@ -1,7 +1,5 @@
 <script>
-  export let currentPage;
-
-  function nav(page) {
+  function nav(page) {  export let currentPage;
     const event = new CustomEvent("navigate", { detail: page });
     dispatchEvent(event);
   }
@@ -10,7 +8,6 @@
 <nav class="bg-white shadow px-6 py-4 flex space-x-6">
   <button
     class="font-semibold text-gray-700 hover:text-blue-600"
-    class:hover="text-blue-600"
     on:click={() => nav("relationships")}
   >
     Relationships
@@ -22,4 +19,3 @@
   >
     Contact Log
   </button>
-</nav>
